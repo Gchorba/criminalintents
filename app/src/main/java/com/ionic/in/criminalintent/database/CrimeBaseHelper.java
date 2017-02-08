@@ -1,14 +1,11 @@
 package com.ionic.in.criminalintent.database;
 
+
 import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 
 import com.ionic.in.criminalintent.database.CrimeDbSchema.CrimeTable;
-
-/**
- * Created by gene on 2/7/17.
- */
 
 public class CrimeBaseHelper extends SQLiteOpenHelper {
     private static final int VERSION = 1;
@@ -20,7 +17,6 @@ public class CrimeBaseHelper extends SQLiteOpenHelper {
 
     @Override
     public void onCreate(SQLiteDatabase db) {
-
         db.execSQL("create table " + CrimeTable.NAME + "(" +
                 " _id integer primary key autoincrement, " +
                 CrimeTable.Cols.UUID + ", " +
@@ -29,7 +25,6 @@ public class CrimeBaseHelper extends SQLiteOpenHelper {
                 CrimeTable.Cols.SOLVED + ", " +
                 CrimeTable.Cols.SUSPECT +
                 ")"
-
         );
     }
 
