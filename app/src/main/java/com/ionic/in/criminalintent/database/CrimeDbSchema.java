@@ -1,9 +1,5 @@
 package com.ionic.in.criminalintent.database;
 
-/**
- * Created by gene on 2/7/17.
- */
-
 public class CrimeDbSchema {
     public static final class CrimeTable {
         public static final String NAME = "crimes";
